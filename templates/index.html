@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+        <title>Asclepius</title>
+    </head>
+    
+    <body style="background-image: url({{ url_for('static', filename='background.jpg') }}); height: 100%; background-position: center; background-repeat: no-repeat;background-size: cover; z-index:0;"> 
+        <div class="card">
+        <img src="{{url_for('static', filename='doctor.png')}}" align="middle" />
+        <h1> Asclepius</h1>
+        <p> Welcome to Asclepius! Asclepius is a site for users to communicate tips regarding best health and medical practices! In this site, users can read and post news, advice and information regarding the world of health and medicine including but not limited to food diets that actually work, health insurance advice, warnings about locations or buisnesses that have unsanitary or unhygenic conditions and more!
+        </p>
+        <a href="/posts">Use</a>  
+        </div>
+    </body>
+</html>
+
+ 

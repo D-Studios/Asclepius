@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body style="background-image: url({{ url_for('static', filename='background.jpg') }}); height: 100%; background-position: center; background-size: cover; z-index:0;"> 
+        <div id="content">
+            <div id="create_post" class="card">
+                <form method="POST">
+                    <h1> Submit a response</h1>
+                    <textarea placeholder="Title" name="title" rows="2" cols="25"></textarea> <br>
+                    <textarea placeholder="Description" name="description" rows="4" cols="50"></textarea><br>
+                    <input type="submit" value="Submit" value="creating_post"> <br> <br> <br>
+                    <a href="/"> Landing Page </a> 
+                </form>
+            </div>
+            
+        <div id="posts">
+        {% for post in posts %}
+        <p>
+            <div id="post" class="card">
+                <h1> {{ posts[post]["title"] }} </h1>
+                <p>{{ posts[post]["body"] }}</p>
+            </div>
+        </p>
+        {% endfor %}
+        </div>
+        
+    </body>
+</html>
+

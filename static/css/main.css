@@ -1,0 +1,57 @@
+/*Stylizing the body */  
+body {
+    background-color: #121212;
+    color: white;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: auto;
+	 }
+/*Stylizing both the body and html*/
+body, html {
+    width: 100%;
+    height: 100%;
+}
+/*Stylizing links*/
+a {
+    color:#3993c4;
+    text-align:center;
+    font-weight: bold;
+    text-decoration:none;
+}
+/*Stylizing hovered links*/
+a:hover{
+    color:#ffffff;
+}
+
+/*Stylizing paragraphs*/
+p{
+    font-weight: bold;
+    color: #20353b;
+}
+
+/*Stylizing headers*/
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+    text-decoration:none;
+}
+
+/*Stylizing all elements*/
+*{
+	text-align: center;
+}
+/*Creating a cardlike background*/
+.card{
+	background-color:#023c61;
+    padding:1px;
+	margin:20px auto;
+	position:relative;
+	top: 10%;
+    border-radius:10px;
+    text-align: center; 
+    width: 50%;
+}
+/*Stylizing links, paragraphs, and labels*/
+a,p,h1,h2,h3,h4,h5,h6,label{
+    color: #9dbacc;
+} 
