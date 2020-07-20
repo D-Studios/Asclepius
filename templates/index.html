@@ -1,17 +1,22 @@
 <!DOCTYPE HTML>
 
 <html>
+    <!--Loading in the stylesheet and setting the title of the website-->
     <head>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
         <title>Asclepius</title>
     </head>
-    
+    <!--Creating a background image for the body-->
     <body style="background-image: url({{ url_for('static', filename='background.jpg') }}); height: 100%; background-position: center; background-repeat: no-repeat;background-size: cover; z-index:0;"> 
+        <!--Creating a card background-->
         <div class="card">
+        <!--Loading an image of the doctor icon-->
         <img src="{{url_for('static', filename='doctor.png')}}" align="middle" />
+        <!--Text explaining what Asclepius is-->
         <h1> Asclepius</h1>
         <p> Welcome to Asclepius! Asclepius is a site for users to communicate tips regarding best health and medical practices! In this site, users can read and post news, advice and information regarding the world of health and medicine including but not limited to food diets that actually work, health insurance advice, warnings about locations or buisnesses that have unsanitary or unhygenic conditions and more!
         </p>
+        <!--Link to view/create posts-->
         <a href="/posts">Use</a>  
         </div>
     </body>

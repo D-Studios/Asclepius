@@ -17,7 +17,7 @@ def posts():
     if request.method=="POST":
         title=request.form.get("title")
         description=request.form.get("description")
-        asclepius.Account.write_post(title, description)
+        asclepius.Post.write_post(title, description)
         return redirect(url_for('posts')) 
     return render_template("posts.html", posts=posts)
 

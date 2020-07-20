@@ -1,9 +1,13 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <!--Loading the stylesheet and title of the website-->
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+        <title> Asclepius </title>
     </head>
+    <!--Creating a background image for the body-->
     <body style="background-image: url({{ url_for('static', filename='background.jpg') }}); height: 100%; background-position: center; background-size: cover; z-index:0;"> 
+        <!--Asking the user for a title and description for a post-->
         <div id="content">
             <div id="create_post" class="card">
                 <form method="POST">
@@ -14,7 +18,7 @@
                     <a href="/"> Landing Page </a> 
                 </form>
             </div>
-            
+        <!--Displaying all posts-->  
         <div id="posts">
         {% for post in posts %}
         <p>
